@@ -1,13 +1,13 @@
 == README
 
 Steps to run:
-$ bundle install
-$ rake db:create
-$ rake db:migrate
-$ rails s
+ $ bundle install
+ $ rake db:create
+ $ rake db:migrate
+ $ rails s
 
 You might need to create a user on postgresql:
-$ sudo service postgresql start
-$ sudo sudo -u postgres psql
-postgres=# CREATE USER username SUPERUSER PASSWORD 'password';
-postgres=# \q
+ $ sudo service postgresql start
+ $ sudo sudo -u postgres psql
+ postgres=# CREATE USER username SUPERUSER PASSWORD 'password';
+ postgres=# \q

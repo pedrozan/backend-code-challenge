@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['USERNAME'] %>
+  password: <%= ENV['PASSWORD'] %>
+  host:     <%= ENV['IP'] %>
+
+development:
+  <<: *default
+  database: cars_controll_development
+
+test:
+  <<: *default
+  database: cars_controll_test
+
+production:
+  <<: *default
+  database: cars_controll_production

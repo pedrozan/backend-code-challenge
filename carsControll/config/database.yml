@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: cars_controll_development
+  database: carsControll_development
 
 test:
   <<: *default
-  database: cars_controll_test
+  database: carsControll_test
 
 production:
   <<: *default
-  database: cars_controll_production
+  database: carsControll_production
